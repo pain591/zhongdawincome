@@ -7,7 +7,7 @@
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,15 +20,18 @@
 
     <nav class="main-nav" id="main-nav">
       <ul>
-        <li><a href="#about" data-close>عن الشركة</a></li>
-        <li><a href="#gallery" data-close>المعرض</a></li>
-        <li><a href="#contact" data-close>تواصل معنا</a></li>
+        <li><a href="#about" data-close data-i18n="nav_about">About Us</a></li>
+        <li><a href="#gallery" data-close data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="#contact" data-close data-i18n="nav_contact">Contact</a></li>
       </ul>
     </nav>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-actions">
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">العربية</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -36,29 +39,29 @@
 
   <section class="hero">
     <div class="hero-inner">
-      <p class="eyebrow">Welcome to our website!</p>
-      <h1>SHANGHAI ZHONGDA WINCOME CO., LTD.</h1>
-      <p class="lead">The company focuses on blending traditional designs with modern craftsmanship to meet customer needs.</p>
+      <p class="eyebrow" data-i18n="hero_eyebrow">Welcome to our website!</p>
+      <h1 data-i18n="hero_title">Shanghai Zhongda Wincome Co., Ltd.</h1>
+      <p class="lead" data-i18n="hero_lead">The company focuses on blending traditional designs with modern craftsmanship to meet customer needs.</p>
     </div>
   </section>
 
   <section class="about" id="about">
     <div class="section-inner about-grid">
       <div class="about-badge">
-        <span class="since">Since</span>
+        <span class="since" data-i18n="about_since">Since</span>
         <span class="year">2012</span>
       </div>
       <div class="about-copy">
-        <h2>Established in 2012</h2>
-        <p>A specialized manufacturer of Arab thobes in China. We strive to achieve excellence in the quality of our products and services.</p>
+        <h2 data-i18n="about_title">Established in 2012</h2>
+        <p data-i18n="about_body">A specialized manufacturer of Arab thobes in China. We strive to achieve excellence in the quality of our products and services.</p>
       </div>
     </div>
   </section>
 
   <section class="factory">
     <div class="section-inner">
-      <h2>Our Factory</h2>
-      <p class="section-lead">Our company has succeeded in meeting customer needs and providing high-quality products at competitive prices. We also specialize in the finest Moroccan thobes (galabiya/kalabiya). We continually strive to develop our products and expand our distribution to become the premier brand of Arab fashion in China and the Arab world. Furthermore, thanks to our commitment to quality and innovation, SHANGHAI ZHONGDA WINCOME CO., LTD. is a trusted destination for customers seeking elegant and distinctive Arab fashion.</p>
+      <h2 data-i18n="factory_title">Our Factory</h2>
+      <p class="section-lead" data-i18n="factory_lead">Our company has succeeded in meeting customer needs and providing high-quality products at competitive prices. We also specialize in the finest Moroccan thobes (galabiya/kalabiya). We continually strive to develop our products and expand our distribution to become the premier brand of Arab fashion in China and the Arab world. Furthermore, thanks to our commitment to quality and innovation, Shanghai Zhongda Wincome Co., Ltd. is a trusted destination for customers seeking elegant and distinctive Arab fashion.</p>
 
       <div class="photo-strip" id="gallery">
         <a href="factory-1.jpg" class="lightbox-trigger"><img src="factory-1.jpg" alt="Our Factory" loading="lazy"></a>
@@ -72,12 +75,12 @@
 
   <section class="products">
     <div class="section-inner">
-      <h2>Our Products</h2>
+      <h2 data-i18n="products_title">Our Products</h2>
 
       <div class="tabs" id="product-tabs">
         <div class="tab-list" role="tablist">
-          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="thobe">Thobe</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-tab="pants">Pants</button>
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="thobe" data-i18n="tab_thobe">Thobe</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="pants" data-i18n="tab_pants">Pants</button>
         </div>
 
         <div class="tab-panel active" data-panel="thobe" role="tabpanel">
@@ -123,8 +126,8 @@
 
   <section class="address">
     <div class="section-inner">
-      <h2>Address</h2>
-      <p>Room 260-1, 828-838 Zhangyang Road, China (Shanghai) Pilot Free Trade Zone</p>
+      <h2 data-i18n="address_title">Address</h2>
+      <p data-i18n="address_body">Room 260-1, 828-838 Zhangyang Road, China (Shanghai) Pilot Free Trade Zone</p>
     </div>
   </section>
 
@@ -133,24 +136,24 @@
 <footer class="site-footer" id="contact">
   <div class="section-inner footer-grid">
     <div class="footer-col">
-      <h3>Emails</h3>
+      <h3 data-i18n="footer_emails">Emails</h3>
       <a href="mailto:info@shanghaizhongda.com">info@shanghaizhongda.com</a>
       <a href="mailto:montexco@163.com">montexco@163.com</a>
       <a href="mailto:prodachina@163.com">prodachina@163.com</a>
     </div>
     <div class="footer-col">
-      <h3>Mobile</h3>
+      <h3 data-i18n="footer_mobile">Mobile</h3>
       <a href="tel:008618888978899">0086 18888978899</a>
       <a href="tel:008613757147809">0086 13757147809</a>
     </div>
     <div class="footer-col">
-      <h3>Factory Phone</h3>
+      <h3 data-i18n="footer_factory_phone">Factory Phone</h3>
       <a href="tel:008657188302443">0086-571-88302443</a>
       <a href="tel:008657188302244">0086-571-88302244</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> Shanghai Zhongda Wincome CO., LTD. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> <span data-i18n="footer_company">Shanghai Zhongda Wincome Co., Ltd.</span> <span data-i18n="footer_rights">All rights reserved.</span></p>
   </div>
 </footer>
 

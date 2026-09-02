@@ -77,6 +77,44 @@ h1, h2, h3 {
   letter-spacing: 0.02em;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lang-toggle {
+  font-family: var(--font-base);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--color-accent);
+  background: transparent;
+  color: var(--color-accent-dark);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.lang-toggle:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+html[dir="rtl"] body,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] .tab-btn,
+html[dir="rtl"] .main-nav a,
+html[dir="rtl"] .eyebrow,
+html[dir="rtl"] .footer-col h3,
+html[dir="rtl"] .lang-toggle {
+  font-family: 'Cairo', 'Montserrat', Tahoma, Arial, sans-serif;
+}
+
 .menu-toggle {
   display: none;
   flex-direction: column;
