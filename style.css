@@ -153,6 +153,14 @@ html[dir="rtl"] .lang-toggle {
   margin: 0 0 14px;
 }
 
+.hero-logo {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto 22px;
+}
+
 .hero h1 {
   font-size: clamp(28px, 4vw, 41px);
   line-height: 1.25;
